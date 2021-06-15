@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3e555e832ffa09447a532e81ea83b668
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - outline: {instanceID: 0}
+  - annotations: {instanceID: 0}
+  - moveIcon: {fileID: 919132149155446097, guid: 045d90213f4649641a72edc090a2fbb3,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
