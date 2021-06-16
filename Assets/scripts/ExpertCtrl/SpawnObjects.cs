@@ -45,7 +45,7 @@ public class SpawnObjects : MonoBehaviour
             {
                 Destroy(GameObject.Find(channelName));
             }
-            GameObject obj = new OBJLoader().Load(channelName + ".obj");
+            GameObject obj = new OBJLoader().Load(Directory.GetCurrentDirectory() +"/"+channelName + ".obj");
             obj.tag = "Model";
             obj.transform.localScale = Vector3.one;
             foreach (Transform child in obj.transform)
