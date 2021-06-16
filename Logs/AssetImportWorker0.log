@@ -612,3 +612,30 @@ System memory in use after: 44.3 MB.
 Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1684.
 Total: 6.658100 ms (FindLiveObjects: 0.375300 ms CreateObjectMapping: 0.138700 ms MarkObjects: 5.979100 ms  DeleteObjects: 0.162600 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 8312.273044 seconds.
+  path: Assets/Logo.png
+  artifactKey: Guid(f824af5a75b702e43a5050c16149e365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Logo.png using Guid(f824af5a75b702e43a5050c16149e365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a65f2dca62e41cfe8c395b40394375') in 0.741680 seconds
+  Import took 0.777987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.771564 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6e520b92ccfc61bcfa21a7bcab8468') in 0.004644 seconds
+  Import took 0.009217 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 30.84 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 43.9 MB.
+System memory in use after: 44.0 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1684.
+Total: 51.679100 ms (FindLiveObjects: 1.033100 ms CreateObjectMapping: 0.118900 ms MarkObjects: 50.346200 ms  DeleteObjects: 0.178700 ms)
+
