@@ -3749,7 +3749,7 @@ MonoBehaviour:
   pencilIcon: {fileID: 2800000, guid: df8a07e888651e94da61db19a4dbf7cc, type: 3}
   dropperIcon: {fileID: 2800000, guid: c95d5f878b1865141a6460f7295da3e3, type: 3}
   handIcon: {fileID: 2800000, guid: 98b73d0b11b4eda4ebdd531247323dc8, type: 3}
-  noneIcon: {fileID: 10906, guid: 0000000000000000f000000000000000, type: 0}
+  noneIcon: {fileID: 2800000, guid: 46a45f10a24dc284b804fe9bc4e6273c, type: 3}
   canvas: {fileID: 0}
   currentTool: 0
   drawings: []
@@ -4638,7 +4638,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 46a45f10a24dc284b804fe9bc4e6273c, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0

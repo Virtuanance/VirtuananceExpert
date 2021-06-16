@@ -69,6 +69,9 @@ public class Annotations : MonoBehaviour
         ui_slider.gameObject.SetActive(false);
         DeactivateCSs();
         DeactivateRSs();
+        ui_slider.gameObject.SetActive(true);
+        currentTool = AnnotationsTools.None;
+        canvas.GetComponentInChildren<RawImage>().texture = noneIcon;
     }
 
     public void DeactivateRSs()
@@ -172,11 +175,11 @@ public class Annotations : MonoBehaviour
                     }
                     else
                     {
-                        CreateLine(GetMouseCameraPos(false));
+                        CreateLine(GetMouseCameraPos());
                     }
                 }else
                 {
-                    CreateLine(GetMouseCameraPos(false));
+                    CreateLine(GetMouseCameraPos());
                 }
             }
             else if(Input.GetMouseButtonUp(0))
@@ -211,7 +214,7 @@ public class Annotations : MonoBehaviour
             }
             if (Input.GetMouseButton(0))
             {
-                var ray = GetMouseCameraPos(true);
+                var ray = GetMouseCameraPos();
                 if (Vector3.Distance(ray, drawPoints[drawPoints.Count - 1]) >= .1f)
                 {
                     UpdateLine(ray);
@@ -336,16 +339,13 @@ public class Annotations : MonoBehaviour
         drawings[drawings.Count - 1].GetComponent<LineRenderer>().positionCount++;
         drawings[drawings.Count - 1].GetComponent<LineRenderer>().SetPosition(drawings[drawings.Count - 1].GetComponent<LineRenderer>().positionCount - 1 ,pos);
     }
-    private Vector3 GetMouseCameraPos(bool started)
+    private Vector3 GetMouseCameraPos()
     {
         var ray = camera.ScreenPointToRay(Input.mousePosition);
-        if (!started)
-        {
             if (Physics.Raycast(ray, out hit))
             {
                 return hit.point;
             }
-        }
         return ray.origin + ray.direction * Vector3.Distance(pivotPointWorld ,  camera.transform.position);
     }
 
