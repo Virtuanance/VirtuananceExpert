@@ -36,7 +36,7 @@ public class Annotations : MonoBehaviour
     private RaycastHit hit;
     private List<string> fileContent;
     private Vector3 pivotPointScreen;
-    private Vector3 pivotPointWorld;
+    public Vector3 pivotPointWorld;
     private bool lockDepth = false,sliding = false;
     private int lineID = 0;
 
@@ -45,7 +45,7 @@ public class Annotations : MonoBehaviour
     void Start()
     {
         path = Application.dataPath +"/paths.txt";
-
+        File.WriteAllLines(path, new List<String>());
         fileContent = new List<string>();
         ui_degree_inputs = new List<GameObject>();
         ui_degree_inputs.Add(GameObject.Find("X_Slider"));
@@ -107,6 +107,7 @@ public class Annotations : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             deselectAll();
+            sliding = false;
             currentTool = AnnotationsTools.Pencil;
             DeactivateRSs();
             ui_slider.gameObject.SetActive(true);
@@ -149,6 +150,10 @@ public class Annotations : MonoBehaviour
                     pivotPointWorld = hit.point;
                     print(pivotPointWorld + " is new pivot");
                 }
+                else
+                {
+                    print("old pivot is " + pivotPointWorld);
+                }
             }
            
         }else if(currentTool == AnnotationsTools.Pencil && !sliding)
@@ -161,11 +166,18 @@ public class Annotations : MonoBehaviour
                     var ray = camera.ScreenPointToRay(pivotPointScreen);
                     if (Physics.Raycast(ray, out hit))
                     {
-                        //If it hits something, then we will be using this as the pivot point
                         pivotPointWorld = hit.point;
+                        print(hit.collider.name + " " + hit.point);
+                        CreateLine(hit.point);
                     }
+                    else
+                    {
+                        CreateLine(GetMouseCameraPos(false));
+                    }
+                }else
+                {
+                    CreateLine(GetMouseCameraPos(false));
                 }
-                CreateLine();
             }
             else if(Input.GetMouseButtonUp(0))
             {
@@ -174,20 +186,33 @@ public class Annotations : MonoBehaviour
                 drawings[drawings.Count - 1].GetComponent<MeshCollider>().sharedMesh = mesh;
                 drawings[drawings.Count - 1].AddComponent<Manipulator>();
                 var outpos = new Vector3[drawings[drawings.Count - 1].GetComponent<LineRenderer>().positionCount];
+                var cam = Camera.main.transform.position;
+                //string topLine = (cam.x - model.transform.position.x) + "_" + (cam.y - model.transform.position.y) + "_" + (cam.z - model.transform.position.z) + " " + model.transform.parent.rotation.eulerAngles.x+"_" + model.transform.parent.rotation.eulerAngles.y + "_" + model.transform.parent.rotation.eulerAngles.z;
+                string topLine = (drawings[drawings.Count - 1].transform.localPosition.x) + "_" + (drawings[drawings.Count - 1].transform.localPosition.y) + "_" + (drawings[drawings.Count - 1].transform.localPosition.z) + " " + model.transform.rotation.eulerAngles.x+"_" + model.transform.rotation.eulerAngles.y + "_" + model.transform.rotation.eulerAngles.z;
+                if (fileContent.Count > 0)
+                {
+                    fileContent.RemoveAt(0);
+                    fileContent.Insert(0, topLine);
+                }
+                else
+                {
+                    fileContent.Insert(0, topLine);
+                }
                 string line = lineMaterial.color.r + "_" + lineMaterial.color.g + "_" + lineMaterial.color.b + "_" + lineWidth+ " ";
                 line += drawings[drawings.Count - 1].name;
                 drawings[drawings.Count - 1].GetComponent<LineRenderer>().GetPositions(outpos);
                 foreach(Vector3 v in outpos)
                 {
-                   line += (v.x - model.transform.position.x) + "_" + (v.y - model.transform.position.y) + "_" + (v.z - model.transform.position.z) + " ";
+                   //line += (v.x - drawings[drawings.Count - 1].transform.localPosition.x) + "_" + (v.y-drawings[drawings.Count - 1].transform.localPosition.y) + "_" + ( v.z- drawings[drawings.Count - 1].transform.localPosition.z) + " ";
+                   line += ( v.x) + "_" + (v.y) + "_" + ( v.z) + " ";
                 }
                 fileContent.Add(line);
                 UpdateTextFile();
             }
             if (Input.GetMouseButton(0))
             {
-                var ray = GetMouseCameraPos();
-                if (Vector3.Distance(ray, drawPoints[drawPoints.Count - 1]) >= .25f)
+                var ray = GetMouseCameraPos(true);
+                if (Vector3.Distance(ray, drawPoints[drawPoints.Count - 1]) >= .1f)
                 {
                     UpdateLine(ray);
                 }
@@ -196,6 +221,7 @@ public class Annotations : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Z) && drawings.Count > 0)
         {
             var toDestroy = drawings[drawings.Count - 1];
+            fileContent.RemoveAt(fileContent.Count - 1);
             drawings.RemoveAt(drawings.Count - 1);
             Destroy(toDestroy);
         }
@@ -225,13 +251,12 @@ public class Annotations : MonoBehaviour
 
         lineMaterial.color = new Color(ui_color_sliders[0].GetComponent<Slider>().value / 255f, ui_color_sliders[1].GetComponent<Slider>().value / 255f, ui_color_sliders[2].GetComponent<Slider>().value / 255f);
     }
-    private void deselectAll()
+    public void deselectAll()
     {
-        GameObject[] models = GameObject.FindGameObjectsWithTag("Model");
-        for (int i = 0; i < models.Length; i++)
+        Manipulator[] manipulators = GameObject.FindObjectsOfType<Manipulator>();
+        foreach (var item in manipulators)
         {
-            Manipulator a = models[i].GetComponentInChildren<Manipulator>();
-            a.Deselect();
+            item.Deselect();
         }
     }
     public void sliderChanged()
@@ -254,14 +279,16 @@ public class Annotations : MonoBehaviour
     }
 
 
-    private void CreateLine()
+    private void CreateLine(Vector3 lineSP)
     {
+        print(lineSP + " is SP");
         drawPoints.Clear();
-        var lineSP = GetMouseCameraPos();
         drawPoints.Add(lineSP);
         drawPoints.Add(lineSP);
         var lineGO = new GameObject();
-        lineGO.name = "Line " + drawings.Count;
+        lineGO.transform.localPosition = Vector3.zero;
+        lineGO.transform.SetParent(model.transform);
+        lineGO.name = "Line" + drawings.Count + " ";
         var lineRenderer = lineGO.AddComponent<LineRenderer>();
         var meshCollider = lineGO.AddComponent<MeshCollider>();
         lineRenderer.material = lineMaterial;
@@ -271,7 +298,6 @@ public class Annotations : MonoBehaviour
         lineRenderer.SetPosition(0,drawPoints[0]);
         lineRenderer.SetPosition(1,drawPoints[1]);
         drawings.Add(lineGO);
-        lineGO.transform.SetParent(model.transform);
     }
 
     private void UpdateTextFile()
@@ -310,10 +336,17 @@ public class Annotations : MonoBehaviour
         drawings[drawings.Count - 1].GetComponent<LineRenderer>().positionCount++;
         drawings[drawings.Count - 1].GetComponent<LineRenderer>().SetPosition(drawings[drawings.Count - 1].GetComponent<LineRenderer>().positionCount - 1 ,pos);
     }
-    private Vector3 GetMouseCameraPos()
+    private Vector3 GetMouseCameraPos(bool started)
     {
         var ray = camera.ScreenPointToRay(Input.mousePosition);
-        return ray.origin + ray.direction * (pivotPointWorld.z -  camera.transform.position.z );
+        if (!started)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                return hit.point;
+            }
+        }
+        return ray.origin + ray.direction * Vector3.Distance(pivotPointWorld ,  camera.transform.position);
     }
 
 }

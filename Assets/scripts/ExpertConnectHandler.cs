@@ -21,7 +21,7 @@ public class ExpertConnectHandler : MonoBehaviour
     static IVideoChatClient app = null;
     //static IVideoChatClient app = null;
 
-    private string HomeSceneName = "MainScene";
+    private string HomeSceneName = "MainMenuExpert";
 
     [Header("Agora Properties")]
     [SerializeField]
@@ -143,7 +143,7 @@ public class ExpertConnectHandler : MonoBehaviour
         SaveChannelName();
         SceneManager.sceneLoaded += OnLevelFinishedLoading; // configure GameObject after scene is loaded
         Scene active = SceneManager.GetActiveScene();
-        SceneManager.UnloadScene(active);
+        SceneManager.UnloadSceneAsync(active);
         SceneManager.LoadScene("ExpertMainScene");
     }
 

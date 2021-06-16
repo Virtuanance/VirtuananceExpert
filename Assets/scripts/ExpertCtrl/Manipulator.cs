@@ -70,6 +70,7 @@ public class Manipulator : MonoBehaviour
     {
         if (annotations.currentTool == AnnotationsTools.Hand)
         {
+            annotations.deselectAll();
             selected = true;
             cm.smthSelected = true;
             if (mat != null)
@@ -204,7 +205,7 @@ public class Manipulator : MonoBehaviour
                     setToEA.z = item.GetComponent<Slider>().value;
                 }
             }
-            transform.eulerAngles = setToEA;
+            transform.parent.transform.eulerAngles = setToEA;
         }
     }
     private Vector3 GetMouseAsWorldPoint()

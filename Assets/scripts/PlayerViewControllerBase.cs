@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using agora_gaming_rtc;
 using agora_utilities;
+using UnityEngine.SceneManagement;
 
 public class PlayerViewControllerBase : IVideoChatClient
 {
@@ -77,6 +78,8 @@ public class PlayerViewControllerBase : IVideoChatClient
         mRtcEngine.LeaveChannel();
         // deregister video frame observers in native-c code
         mRtcEngine.DisableVideoObserver();
+
+
     }
 
     protected bool MicMuted { get; set; }
@@ -101,6 +104,9 @@ public class PlayerViewControllerBase : IVideoChatClient
         {
             OnViewControllerFinish();
         }
+        Scene active = SceneManager.GetActiveScene();
+        SceneManager.UnloadSceneAsync(active);
+        SceneManager.LoadScene("ConnectExpert");
     }
 
     protected virtual void OnVideoSizeChanged(uint uid, int width, int height, int rotation)
@@ -262,6 +268,8 @@ public class PlayerViewControllerBase : IVideoChatClient
         GameObject canvas = GameObject.Find("Canvas");
         if (canvas != null)
         {
+            Button returnButton = GameObject.Find("ReturnButton").GetComponent<Button>();
+            returnButton.onClick.AddListener(OnLeaveButtonClicked);
             go.transform.SetParent(canvas.transform);
         }
         // set up transform

@@ -41,14 +41,24 @@ public class SpawnObjects : MonoBehaviour
         if (success)
         {
             File.WriteAllBytes(channelName + ".obj", www.bytes);
+            if (GameObject.Find(channelName) != null)
+            {
+                Destroy(GameObject.Find(channelName));
+            }
             GameObject obj = new OBJLoader().Load(channelName + ".obj");
             obj.tag = "Model";
-            obj.transform.localScale = obj.transform.localScale / 10;
-            obj.transform.GetChild(0).gameObject.AddComponent<Manipulator>();
-            obj.transform.GetChild(0).gameObject.AddComponent<MeshCollider>();
+            obj.transform.localScale = Vector3.one;
+            foreach (Transform child in obj.transform)
+            {
+                child.gameObject.AddComponent<Manipulator>();
+                child.gameObject.AddComponent<MeshCollider>();
+                child.gameObject.GetComponent<Manipulator>().init();
+            }
+           
             obj.transform.position = new Vector3(camPos.x - 4,camPos.y , camPos.z + 5) ;
             GetComponent<Annotations>().model = obj;
-            obj.transform.GetChild(0).gameObject.GetComponent<Manipulator>().init();
+            GetComponent<Annotations>().pivotPointWorld = obj.transform.position;
+
         }
 
         else
