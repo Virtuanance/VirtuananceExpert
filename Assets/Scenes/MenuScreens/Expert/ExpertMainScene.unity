@@ -3766,8 +3766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d6c6865e99937439983b4861a09604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainSpeed: 10
-  shiftAdd: 50
+  mainSpeed: 5
+  shiftAdd: 200
   maxShift: 500
   degrees: 10
   angularSpeed: 1

@@ -15,7 +15,6 @@ public class Manipulator : MonoBehaviour
     GameObject moveIcon;
     GameObject instantiatedIcon;
     CameraMovement cm;
-    float rotSpeed = 150;
     private List<GameObject> ui_degree_inputs;
     int i = 0;
     private Vector3 mOffset;
