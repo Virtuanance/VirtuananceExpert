@@ -57,6 +57,8 @@ public class Annotations : MonoBehaviour
         ui_color_sliders.Add(GameObject.Find("G_Slider"));
         ui_color_sliders.Add(GameObject.Find("B_Slider"));
 
+
+
         currentTool = AnnotationsTools.None;
         canvas = FindObjectOfType<Canvas>();
         ui_slider = GameObject.Find("WidthSlider").GetComponent<Slider>();
@@ -72,6 +74,7 @@ public class Annotations : MonoBehaviour
         ui_slider.gameObject.SetActive(true);
         currentTool = AnnotationsTools.None;
         canvas.GetComponentInChildren<RawImage>().texture = noneIcon;
+        GameObject.Find("ExpertHandler").GetComponent<ExpertConnectHandler>().HandleLeaving();
     }
 
     public void DeactivateRSs()

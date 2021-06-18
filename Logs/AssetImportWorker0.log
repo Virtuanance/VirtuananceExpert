@@ -15,11 +15,11 @@ C:/Users/alican/Desktop/4-2/Bitirme Proj/Versions/VirtuananceExpert/VirtuananceE
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59960
+60276
 Successfully changed project path to: C:/Users/alican/Desktop/4-2/Bitirme Proj/Versions/VirtuananceExpert/VirtuananceExpert
 C:/Users/alican/Desktop/4-2/Bitirme Proj/Versions/VirtuananceExpert/VirtuananceExpert
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 67.08 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 67.00 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path D:/Unity/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,607 +35,347 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001436 seconds.
+Registered in 0.002713 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 48.26 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 53.74 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.305 seconds
+- Completed reload, in  2.848 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014269 seconds.
+Registered in 0.006614 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 1.60 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at VuforiaEnabledObserver..cctor () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.561 seconds
+- Completed reload, in  1.451 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 0.96 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1245 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.8 MB.
-System memory in use after: 64.9 MB.
-
-Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 1872.
-Total: 4.807100 ms (FindLiveObjects: 0.718600 ms CreateObjectMapping: 0.221000 ms MarkObjects: 3.710900 ms  DeleteObjects: 0.155000 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/scripts/ExpertCtrl
-  artifactKey: Guid(bb197a66d89ca974ebc077638547559d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/ExpertCtrl using Guid(bb197a66d89ca974ebc077638547559d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33eb6eca0bfcbfb96ee6eff5195e9d1') in 0.028575 seconds
-  Import took 0.034027 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/scripts/ExpertCtrl/Annotations.cs
-  artifactKey: Guid(c4eef5e668556314191ecf227529c569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/ExpertCtrl/Annotations.cs using Guid(c4eef5e668556314191ecf227529c569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1495c705b8ff0617e8f62608e5b126') in 0.045774 seconds
-  Import took 0.050057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 75.448015 seconds.
-  path: Assets/scripts/ExpertCtrl/Annotations.cs
-  artifactKey: Guid(c4eef5e668556314191ecf227529c569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/ExpertCtrl/Annotations.cs using Guid(c4eef5e668556314191ecf227529c569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487481e5d8b82ffc57ccfb4420910052') in 0.004891 seconds
-  Import took 0.013159 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.024319 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at VuforiaEnabledObserver..cctor () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.096 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1231 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.4 MB.
-System memory in use after: 64.4 MB.
-
-Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 1874.
-Total: 3.703600 ms (FindLiveObjects: 0.327400 ms CreateObjectMapping: 0.128900 ms MarkObjects: 3.085900 ms  DeleteObjects: 0.160000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.315050 seconds.
-  path: Assets/Scenes/MenuScreens/Expert/ExpertMainScene.unity
-  artifactKey: Guid(5f64c71f831efd44dbb8c5663d16b564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MenuScreens/Expert/ExpertMainScene.unity using Guid(5f64c71f831efd44dbb8c5663d16b564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21e49d36262a06e10de42948ddde57d2') in 0.023881 seconds
-  Import took 0.032610 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.744708 seconds.
-  path: Assets/icons/Dropper_Icon.png
-  artifactKey: Guid(c95d5f878b1865141a6460f7295da3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icons/Dropper_Icon.png using Guid(c95d5f878b1865141a6460f7295da3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9577ca82a6363eb95b43870d9746e76f') in 0.228141 seconds
-  Import took 0.234538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/backgrounds/mainwallpaper.jpg
-  artifactKey: Guid(bfdb9781ecf486b42bdcd8b1706b7df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/backgrounds/mainwallpaper.jpg using Guid(bfdb9781ecf486b42bdcd8b1706b7df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d1937551e66fe4b9e3029e3776bdca8') in 0.156657 seconds
-  Import took 0.163176 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000611 seconds.
-  path: Assets/icons/loupe-icon.png
-  artifactKey: Guid(51ba4e9ead03488469915bc5c27d48d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icons/loupe-icon.png using Guid(51ba4e9ead03488469915bc5c27d48d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5720a88622bc74ddc8a5bcfde0c65d47') in 0.021517 seconds
-  Import took 0.027639 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000417 seconds.
-  path: Assets/icons/Dropper_Icon.png
-  artifactKey: Guid(c95d5f878b1865141a6460f7295da3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icons/Dropper_Icon.png using Guid(c95d5f878b1865141a6460f7295da3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9577ca82a6363eb95b43870d9746e76f') in 0.009568 seconds
-  Import took 0.013256 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000427 seconds.
-  path: Assets/icons/Pen.png
-  artifactKey: Guid(df8a07e888651e94da61db19a4dbf7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icons/Pen.png using Guid(df8a07e888651e94da61db19a4dbf7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddfaadd4fb0f6108c20cfe63364833ce') in 0.019043 seconds
-  Import took 0.024504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000423 seconds.
-  path: Assets/icons/Hand_Icon.png
-  artifactKey: Guid(98b73d0b11b4eda4ebdd531247323dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icons/Hand_Icon.png using Guid(98b73d0b11b4eda4ebdd531247323dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f41686c2b92cbe85d103e0c5d407832') in 0.021526 seconds
-  Import took 0.027746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/icons/none_icon.png
-  artifactKey: Guid(46a45f10a24dc284b804fe9bc4e6273c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icons/none_icon.png using Guid(46a45f10a24dc284b804fe9bc4e6273c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df211dc862a689a929b72ac05366c9e') in 0.017630 seconds
-  Import took 0.021689 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.009126 seconds.
-  path: Assets/icons/none_icon.png
-  artifactKey: Guid(46a45f10a24dc284b804fe9bc4e6273c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icons/none_icon.png using Guid(46a45f10a24dc284b804fe9bc4e6273c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df211dc862a689a929b72ac05366c9e') in 0.011130 seconds
-  Import took 0.016772 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.392551 seconds.
-  path: Assets/backgrounds/bg2.jpg
-  artifactKey: Guid(215e54d7d33d1404794f89a148c2b952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/backgrounds/bg2.jpg using Guid(215e54d7d33d1404794f89a148c2b952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86f138385e7bb222a34e32257013bd4') in 0.017332 seconds
-  Import took 0.025215 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/icons/button-general.png
-  artifactKey: Guid(e0a2f49242283e44c913037dd53fb7c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icons/button-general.png using Guid(e0a2f49242283e44c913037dd53fb7c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902589f387af66f5f9e15d795b810858') in 0.018377 seconds
-  Import took 0.023857 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/backgrounds/connect-background.jpg
-  artifactKey: Guid(66e30280a8696c44b9703ddf6c23acd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/backgrounds/connect-background.jpg using Guid(66e30280a8696c44b9703ddf6c23acd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aae43ffd9e7b273060e680b0a906e501') in 0.040902 seconds
-  Import took 0.045139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/icons/connect-icon.png
-  artifactKey: Guid(ec1c5761bb5dab0499c50e392636a9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icons/connect-icon.png using Guid(ec1c5761bb5dab0499c50e392636a9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2154583f720d8195a9dc2682f0b451') in 0.020535 seconds
-  Import took 0.025403 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000361 seconds.
-  path: Assets/icons/Button-Upload-icon.png
-  artifactKey: Guid(af27dd05348626f4fbfc595662577ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/icons/Button-Upload-icon.png using Guid(af27dd05348626f4fbfc595662577ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec387026a4636a5108358c9f01fa249') in 0.019562 seconds
-  Import took 0.023942 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011913 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at VuforiaEnabledObserver..cctor () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.282 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.28 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1231 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.8 MB.
-System memory in use after: 67.9 MB.
-
-Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 1888.
-Total: 6.065000 ms (FindLiveObjects: 0.560200 ms CreateObjectMapping: 0.174900 ms MarkObjects: 5.052800 ms  DeleteObjects: 0.273000 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 124.23 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 52 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 44.2 MB.
-System memory in use after: 44.3 MB.
-
-Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 1888.
-Total: 37.678500 ms (FindLiveObjects: 1.033800 ms CreateObjectMapping: 0.267400 ms MarkObjects: 35.857700 ms  DeleteObjects: 0.513000 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 24.16 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 52 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 44.6 MB.
-System memory in use after: 44.7 MB.
-
-Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 1888.
-Total: 3.075100 ms (FindLiveObjects: 0.283900 ms CreateObjectMapping: 0.107200 ms MarkObjects: 2.572700 ms  DeleteObjects: 0.108700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.056053 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.78 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at VuforiaEnabledObserver..cctor () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.298 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.94 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1231 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.7 MB.
-System memory in use after: 68.7 MB.
-
-Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 1890.
-Total: 4.031100 ms (FindLiveObjects: 0.555100 ms CreateObjectMapping: 0.255000 ms MarkObjects: 3.105400 ms  DeleteObjects: 0.112600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015042 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at VuforiaEnabledObserver..cctor () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.230 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.30 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1231 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.9 MB.
-System memory in use after: 69.0 MB.
-
-Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 1892.
-Total: 3.678500 ms (FindLiveObjects: 0.472900 ms CreateObjectMapping: 0.103300 ms MarkObjects: 2.899600 ms  DeleteObjects: 0.196000 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 66.45 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 52 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 45.2 MB.
-System memory in use after: 45.3 MB.
-
-Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 1892.
-Total: 39.513000 ms (FindLiveObjects: 10.302100 ms CreateObjectMapping: 14.863200 ms MarkObjects: 14.142600 ms  DeleteObjects: 0.200400 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 38.46 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 52 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 44.8 MB.
-System memory in use after: 44.9 MB.
-
-Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 1892.
-Total: 2.799200 ms (FindLiveObjects: 0.246900 ms CreateObjectMapping: 0.070200 ms MarkObjects: 2.376100 ms  DeleteObjects: 0.103500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014579 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.16 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at VuforiaEnabledObserver..cctor () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-System.NullReferenceException: Object reference not set to an instance of an object
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <429e381d4e06416d91fbd940f1213fb2>:0 
-  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <429e381d4e06416d91fbd940f1213fb2>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.498 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.97 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1231 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.8 MB.
-System memory in use after: 68.9 MB.
-
-Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 1894.
-Total: 5.644200 ms (FindLiveObjects: 0.276300 ms CreateObjectMapping: 0.105800 ms MarkObjects: 5.018800 ms  DeleteObjects: 0.239500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009256 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
 Refreshing native plugins compatible for Editor in 1.00 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.068 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1198 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.9 MB.
-System memory in use after: 68.0 MB.
+Unloading 1203 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.4 MB.
+System memory in use after: 61.4 MB.
 
-Unloading 242 unused Assets to reduce memory usage. Loaded Objects now: 1682.
-Total: 3.350900 ms (FindLiveObjects: 0.411500 ms CreateObjectMapping: 0.094900 ms MarkObjects: 2.633600 ms  DeleteObjects: 0.208500 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 1623.
+Total: 4.188000 ms (FindLiveObjects: 0.601900 ms CreateObjectMapping: 0.158700 ms MarkObjects: 3.234500 ms  DeleteObjects: 0.188000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/MenuScreens/Expert/ExpertMainScene.unity
+  artifactKey: Guid(5f64c71f831efd44dbb8c5663d16b564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MenuScreens/Expert/ExpertMainScene.unity using Guid(5f64c71f831efd44dbb8c5663d16b564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5107ec5b2c30ea191adcb09b0aaae1') in 0.024825 seconds
+  Import took 0.032343 seconds .
 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 22.06 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 16.83 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 43.6 MB.
-System memory in use after: 43.7 MB.
+System memory in use before: 37.9 MB.
+System memory in use after: 37.9 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1682.
-Total: 4.509100 ms (FindLiveObjects: 0.209800 ms CreateObjectMapping: 0.063900 ms MarkObjects: 3.946800 ms  DeleteObjects: 0.284100 ms)
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1623.
+Total: 3.254500 ms (FindLiveObjects: 0.256800 ms CreateObjectMapping: 0.076300 ms MarkObjects: 2.812800 ms  DeleteObjects: 0.100300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 432.986784 seconds.
+  path: Assets/scripts/ExpertCtrl/CameraMovement.cs
+  artifactKey: Guid(d0d6c6865e99937439983b4861a09604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/ExpertCtrl/CameraMovement.cs using Guid(d0d6c6865e99937439983b4861a09604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7ae5abf2fbc5e24e2475bcc093ad31') in 0.057882 seconds
+  Import took 0.061977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.489927 seconds.
+  path: Assets/scripts/ExpertCtrl/ShareScreen.cs
+  artifactKey: Guid(26f6150dadd396f49bacca494bfc75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/ExpertCtrl/ShareScreen.cs using Guid(26f6150dadd396f49bacca494bfc75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d978864a308bd07d6adff1f307d18e') in 0.004724 seconds
+  Import took 0.011973 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008721 seconds.
+Registered in 0.007487 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 0.54 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.522 seconds
+- Completed reload, in  1.244 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.23 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1198 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 67.5 MB.
-System memory in use after: 67.6 MB.
+System memory in use before: 61.9 MB.
+System memory in use after: 62.0 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1684.
-Total: 4.533000 ms (FindLiveObjects: 0.359500 ms CreateObjectMapping: 0.103700 ms MarkObjects: 3.937300 ms  DeleteObjects: 0.128800 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 24.67 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 44.2 MB.
-System memory in use after: 44.3 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1684.
-Total: 5.203600 ms (FindLiveObjects: 0.515700 ms CreateObjectMapping: 0.118700 ms MarkObjects: 4.382300 ms  DeleteObjects: 0.182600 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 27.01 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 44.2 MB.
-System memory in use after: 44.3 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1684.
-Total: 6.658100 ms (FindLiveObjects: 0.375300 ms CreateObjectMapping: 0.138700 ms MarkObjects: 5.979100 ms  DeleteObjects: 0.162600 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1625.
+Total: 2.770400 ms (FindLiveObjects: 0.159800 ms CreateObjectMapping: 0.044800 ms MarkObjects: 2.459900 ms  DeleteObjects: 0.103900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8312.273044 seconds.
-  path: Assets/Logo.png
-  artifactKey: Guid(f824af5a75b702e43a5050c16149e365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Logo.png using Guid(f824af5a75b702e43a5050c16149e365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a65f2dca62e41cfe8c395b40394375') in 0.741680 seconds
-  Import took 0.777987 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.771564 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6e520b92ccfc61bcfa21a7bcab8468') in 0.004644 seconds
-  Import took 0.009217 seconds .
+  Time since last request: 307.822751 seconds.
+  path: Assets/Scenes/MenuScreens/Expert/ConnectExpert.unity
+  artifactKey: Guid(a5e62db75e14f2546b07b49cdd05e903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MenuScreens/Expert/ConnectExpert.unity using Guid(a5e62db75e14f2546b07b49cdd05e903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edb4623a2a49c553ac4359554cf7c51') in 0.019776 seconds
+  Import took 0.023916 seconds .
 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 30.84 ms, found 11 plugins.
+Registering precompiled user dll's ...
+Registered in 0.014399 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.994 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.0 MB.
+System memory in use after: 62.1 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1627.
+Total: 2.199000 ms (FindLiveObjects: 0.190000 ms CreateObjectMapping: 0.060400 ms MarkObjects: 1.867000 ms  DeleteObjects: 0.080000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006224 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.239 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.6 MB.
+System memory in use after: 62.7 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1629.
+Total: 1.911000 ms (FindLiveObjects: 0.180800 ms CreateObjectMapping: 0.048500 ms MarkObjects: 1.602400 ms  DeleteObjects: 0.077200 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 30.62 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 43.9 MB.
-System memory in use after: 44.0 MB.
+System memory in use before: 39.3 MB.
+System memory in use after: 39.4 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1684.
-Total: 51.679100 ms (FindLiveObjects: 1.033100 ms CreateObjectMapping: 0.118900 ms MarkObjects: 50.346200 ms  DeleteObjects: 0.178700 ms)
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1629.
+Total: 2.962800 ms (FindLiveObjects: 0.288700 ms CreateObjectMapping: 0.134400 ms MarkObjects: 2.398400 ms  DeleteObjects: 0.138800 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016536 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.527 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.00 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.1 MB.
+System memory in use after: 63.1 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1631.
+Total: 4.168100 ms (FindLiveObjects: 0.433600 ms CreateObjectMapping: 0.174700 ms MarkObjects: 3.446300 ms  DeleteObjects: 0.110800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012720 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.392 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.5 MB.
+System memory in use after: 62.6 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1633.
+Total: 2.173900 ms (FindLiveObjects: 0.180200 ms CreateObjectMapping: 0.047700 ms MarkObjects: 1.854800 ms  DeleteObjects: 0.089800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010412 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.38 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.399 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.52 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.9 MB.
+System memory in use after: 62.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1635.
+Total: 42.795800 ms (FindLiveObjects: 0.662200 ms CreateObjectMapping: 0.230700 ms MarkObjects: 41.650600 ms  DeleteObjects: 0.244500 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 74.93 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 39.5 MB.
+System memory in use after: 39.5 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1635.
+Total: 147.766600 ms (FindLiveObjects: 11.824100 ms CreateObjectMapping: 0.272500 ms MarkObjects: 135.443100 ms  DeleteObjects: 0.224000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014016 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.314 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.5 MB.
+System memory in use after: 62.6 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1637.
+Total: 2.310100 ms (FindLiveObjects: 0.273000 ms CreateObjectMapping: 0.080200 ms MarkObjects: 1.802800 ms  DeleteObjects: 0.151000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007676 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.610 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.40 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.8 MB.
+System memory in use after: 62.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1639.
+Total: 4.169500 ms (FindLiveObjects: 0.237800 ms CreateObjectMapping: 0.081800 ms MarkObjects: 3.268600 ms  DeleteObjects: 0.576000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009413 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.810 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.75 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.1 MB.
+System memory in use after: 63.2 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1641.
+Total: 5.924400 ms (FindLiveObjects: 0.648100 ms CreateObjectMapping: 0.198200 ms MarkObjects: 4.879700 ms  DeleteObjects: 0.192200 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 32.07 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 38.8 MB.
+System memory in use after: 38.9 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1641.
+Total: 3.783000 ms (FindLiveObjects: 0.264900 ms CreateObjectMapping: 0.074500 ms MarkObjects: 3.271300 ms  DeleteObjects: 0.162700 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 18.47 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 39.1 MB.
+System memory in use after: 39.2 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1641.
+Total: 9.178700 ms (FindLiveObjects: 0.749800 ms CreateObjectMapping: 0.119600 ms MarkObjects: 8.044200 ms  DeleteObjects: 0.260500 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

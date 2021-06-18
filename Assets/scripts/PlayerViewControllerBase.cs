@@ -95,7 +95,7 @@ public class PlayerViewControllerBase : IVideoChatClient
        
     }
 
-    protected void OnLeaveButtonClicked()
+    public void OnLeaveButtonClicked()
     {
         Leave();
         UnloadEngine();
@@ -268,8 +268,6 @@ public class PlayerViewControllerBase : IVideoChatClient
         GameObject canvas = GameObject.Find("Canvas");
         if (canvas != null)
         {
-            Button returnButton = GameObject.Find("ReturnButton").GetComponent<Button>();
-            returnButton.onClick.AddListener(OnLeaveButtonClicked);
             go.transform.SetParent(canvas.transform);
         }
         // set up transform

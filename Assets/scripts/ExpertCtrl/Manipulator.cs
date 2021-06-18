@@ -155,7 +155,7 @@ public class Manipulator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (selected && Input.GetKeyDown(KeyCode.Escape))
+        if (selected && Input.GetKeyDown(KeyCode.Backspace))
             Deselect();
 
         if (selected)

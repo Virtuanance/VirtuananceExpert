@@ -86,8 +86,12 @@ public class ExpertConnectHandler : MonoBehaviour
 #endif
     }
 
-    private void SendMessage()
+    public void HandleLeaving()
     {
+
+        if (app == null) return;
+        Button returnButton = GameObject.Find("ReturnButton").GetComponent<Button>();
+        returnButton.onClick.AddListener(((PlayerViewControllerBase)app).OnLeaveButtonClicked);
     }
 
     private void LoadLastChannel()
